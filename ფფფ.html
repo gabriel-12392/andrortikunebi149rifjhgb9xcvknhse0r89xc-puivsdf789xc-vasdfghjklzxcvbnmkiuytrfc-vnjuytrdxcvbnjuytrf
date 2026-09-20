@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 დივიანი თანამედროვე გალერეა</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* ბადის (Grid) დიზაინი, რომელიც მობილურზე და კომპიუტერზე ავტომატურად სწორდება */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* თითოეული დივის დიზაინი */
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* სურათის სტილი */
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* ტექსტური ნაწილი */
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* ღილაკის კონტეინერი */
+        .card-footer {
+            padding: 0 20px 20px 20px;
+        }
+
+        /* ღილაკის დიზაინი */
+        .card-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.2s ease, opacity 0.2s ease;
+        }
+
+        .card-btn:hover {
+            background: linear-gradient(135deg, #4f46e5, #4338ca);
+            opacity: 0.95;
+        }
+
+        /* მობილური მოწყობილობებისთვის დამატებითი რეგულირება */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ჩემი პროექტების კოლექცია</h1>
+        <p>15 უნიკალური ბარათი სურათებით, აღწერებით და ღილაკებით</p>
+    </header>
+
+    <div class="container">
+        <!-- 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="ბუნება" class="card-image">
+            <div class="card-content">
+                <h3>მთის პეიზაჟი</h3>
+                <p>აღმოაჩინე ულამაზესი მთები და მიიღე დაუვიწყარი შთაბეჭდილებები.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="ტყე" class="card-image">
+            <div class="card-content">
+                <h3>ზღაპრული ტყე</h3>
+                <p>მწვანე გარემო და სუფთა ჰაერი თქვენი დასვენებისთვის.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1510784722466-f2aa9c52ffd6?auto=format&fit=crop&w=600&q=80" alt="ჩანჩქერი" class="card-image">
+            <div class="card-content">
+                <h3>ველური ჩანჩქერი</h3>
+                <p>ბუნების ძალა და სილამაზე ერთ კადრში.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="ოკეანე" class="card-image">
+            <div class="card-content">
+                <h3>მზიანი სანაპირო</h3>
+                <p>ოქროსფერი ქვიშა და თბილი ზღვა მშვიდი დასვენებისთვის.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=600&q=80" alt="შემოდგომა" class="card-image">
+            <div class="card-content">
+                <h3>შემოდგომის ფერები</h3>
+                <p>ყვითელი და წითელი ფოთლებით მოსასხამი ბუნება.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="ვარსკვლავები" class="card-image">
+            <div class="card-content">
+                <h3>ღამის ვარსკვლავები</h3>
+                <p>უსასრულო სამყარო და გალაქტიკის საიდუმლოებები.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1426604966848-d7adac902bff?auto=format&fit=crop&w=600&q=80" alt="ველი" class="card-image">
+            <div class="card-content">
+                <h3>მწვანე ველები</h3>
+                <p>თავისუფლების შეგრძნება და ჰორიზონტამდე გადაჭიმული მინდვრები.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=600&q=80" alt="ზამთარი" class="card-image">
+            <div class="card-content">
+                <h3>თოვლიანი ზამთარი</h3>
+                <p>თეთრი საბანი და ცივი, მზიანი დღეები მთაში.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="ალპები" class="card-image">
+            <div class="card-content">
+                <h3>ალპური მწვერვალები</h3>
+                <p>მოგზაურობა ყველაზე მაღალ და მიუდგომელ ადგილებში.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80" alt="ტბა" class="card-image">
+            <div class="card-content">
+                <h3>მშვიდი ტბა</h3>
+                <p>წყლის სარკეში ასახული გარემომცველი სილამაზე.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80" alt="უდაბნო" class="card-image">
+            <div class="card-content">
+                <h3>ოქროსფერი უდაბნო</h3>
+                <p>დიდი დიუნები და უსასრულო სიჩუმე.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511497584788-876761142212?auto=format&fit=crop&w=600&q=80" alt="ჯუნგლი" class="card-image">
+            <div class="card-content">
+                <h3>ტროპიკული ჯუნგლები</h3>
+                <p>ეგზოტიკური მცენარეები და ველური ბუნების ხმაური.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498429089276-a24116035f49?auto=format&fit=crop&w=600&q=80" alt="მზის ამოსვლა" class="card-image">
+            <div class="card-content">
+                <h3>დილით მზის ამოსვლა</h3>
+                <p>ახალი დღის დასაწყისი და ცის ნათელი ფერები.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?auto=format&fit=crop&w=600&q=80" alt="მზის ჩასვლა" class="card-image">
+            <div class="card-content">
+                <h3>რომანტიკული მზის ჩასვლა</h3>
+                <p>წითელი და ნარინჯისფერი ტონები ჰორიზონტზე.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=600&q=80" alt="კანიონი" class="card-image">
+            <div class="card-content">
+                <h3>დიდი კანიონი</h3>
+                <p>მილიონობით წლის განმავლობაში შექმნილი ბუნების შედევრი.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-btn">დეტალურად</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
